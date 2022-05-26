@@ -13,23 +13,26 @@ namespace AulasPCDev01
             Console.WriteLine(data2);
             Console.WriteLine(data.ToString("dd/MM/yyyy"));
 
-
-            int idadePessoa = 20;
-            float altura = 1.8f;
+            Console.WriteLine("Qual sua idade?");
+            int idadePessoa = int.Parse(Console.ReadLine());
+            Console.WriteLine("Qual sua altura?");
+            double altura = double.Parse(Console.ReadLine());
             bool maiorIdade = idadePessoa >= 18;
-            bool menorIdade = idadePessoa < 18;
-            bool alturaPermitida = altura >= 1.2f;
+            bool alturaPermitida = altura >= 1.8;
 
 
-            if (maiorIdade && alturaPermitida)
-            {
-                Console.WriteLine("Pode entrar");
-                Console.WriteLine("Seja bem vindo");
-            }
-            else
-            {
-                Console.WriteLine("Não pode entrar");
-            }
+            if (maiorIdade && alturaPermitida) 
+                {
+                    Console.WriteLine("Pode entrar");
+                    Console.WriteLine("Seja bem vindo");
+                }
+                else
+                {
+                    {
+                    Console.WriteLine("Não pode entrar");
+                    }
+                }
+            
 
         }
     }
